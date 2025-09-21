@@ -132,7 +132,7 @@ src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=com
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
             <img 
-              src="src/assets/3pl.jpg" 
+              src="/assets/3pl.jpg" 
               alt="Logistics professional working on a laptop in a warehouse"
               className="rounded-lg shadow-xl"
             />

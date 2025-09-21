@@ -3,6 +3,7 @@ import ScrollReveal from '../components/ScrollReveal';
 import CTA from '../components/common/CTA';
 import { motion } from "framer-motion";
 
+
 const AboutPage = () => {
   return (
      
@@ -65,7 +66,7 @@ const AboutPage = () => {
       <section className="bg-white">
         <div className="container mx-auto px-6 py-20 text-center">
           <ScrollReveal>
-            <h2 className="font-serif text-4xl font-bold text-[#0A2342]">Meet Our Leadership</h2>
+            <h2 className="font-serif text-4xl font-bold text-[#0A2342]">Meet Our Leaders</h2>
             <p className="font-sans text-gray-600 mt-2 mb-16">
               Our strength lies in our experience.  Our leaders bring over 100+ years of combined regional expertise.
             </p>
@@ -75,7 +76,7 @@ const AboutPage = () => {
             {/* Team Member 1 */}
             <ScrollReveal delay={0.1}>
               <div className="text-center">
-                <img src="src/assets/Ramakanta_panda.jpg" alt="Ramakanta Panda" className="w-50 h-50 rounded-full mx-auto mb-4 shadow-lg object-cover" />
+                <img src="/assets/Ramakanta_panda.jpg" alt="Ramakanta Panda" className="w-50 h-50 rounded-full mx-auto mb-4 shadow-lg object-cover" />
                  <h3 className="font-sans text-xl font-bold text-[#0A2342]">Ramakanta Panda </h3>
                  <p className="font-sans text-gray-500 mb-2">Managing Partner & Founder </p>
                  <p className="font-sans text-sm text-gray-600 italic">"Streamlining supply chains for success." </p>
@@ -123,7 +124,7 @@ const AboutPage = () => {
             <ScrollReveal delay={0.1}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
-                  src="src/assets/odisha_dis.png" 
+                  src="/assets/odisha_dis.png" 
                   alt="Branches" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                 />
@@ -139,7 +140,7 @@ const AboutPage = () => {
             <ScrollReveal delay={0.2}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
-                  src="src/assets/warehouse.png" 
+                  src="/assets/warehouse.png" 
                   alt="Warehouse" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                 />
@@ -155,7 +156,7 @@ const AboutPage = () => {
             <ScrollReveal delay={0.3}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
-                  src="src/assets/BRB_img.png" 
+                  src="/assets/BRB_img.png" 
                   alt="Delivery Vehicles" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                 />
@@ -171,7 +172,7 @@ const AboutPage = () => {
             <ScrollReveal delay={0.4}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
-                  src="src/assets/man.png" 
+                  src="/assets/man.png" 
                   alt="Dedicated Personnel" 
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
                 />
