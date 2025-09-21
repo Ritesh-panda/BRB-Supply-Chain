@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* --- Custom Scrollbar Styling --- */
+
+/* For modern browsers like Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #0A2342 #F1F1F1;
+}
+
+/* For Webkit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0A2342;
+  border-radius: 10px;
+  border: 2px solid #F1F1F1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2D3A4C;
+}
