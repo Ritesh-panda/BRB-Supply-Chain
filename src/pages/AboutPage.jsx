@@ -1,12 +1,39 @@
 import React from 'react';
-import ScrollReveal from '../components/ScrollReveal';
-import CTA from '../components/common/CTA';
+import ScrollReveal from '../components/ScrollReveal.jsx';
+import CTA from '../components/common/CTA.jsx';
 import { motion } from "framer-motion";
 
-
 const AboutPage = () => {
+
+  const leaders = [
+     {
+      name: "Biranchi Narayan Mishra",
+      title: "Partner & Co-Founder",
+      quote: `"Efficiency and reliability guaranteed."`,
+      experience: "15+ years in Courier & Cargo",
+      imgSrc: "https://placehold.co/400x400/EBF8FF/0A2342?text=BNM", // <-- Replace with local path if you have the image
+      linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+    },
+    {
+      name: "Ramakanta Panda",
+      title: "Managing Partner & Co-Founder",
+      quote: `"Streamlining supply chains for success."`,
+      experience: "24 years in SCM with India's top corporates",
+      imgSrc: "/assets/Ramakanta_panda.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/ramakanta-panda-28141532/" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+    },
+   
+    {
+      name: "Bijaya Kumar Dash",
+      title: "Partner & Co-Founder",
+      quote: `"Delivering excellence, every time."`,
+      experience: "30+ years in Courier & Cargo",
+      imgSrc: "https://placehold.co/400x400/EBF8FF/0A2342?text=BKD", // <-- Replace with local path if you have the image
+      linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+    }
+  ];
+
   return (
-     
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -56,7 +83,6 @@ const AboutPage = () => {
                   </p>
                 </div>
               </div>
-
             </div>
           </ScrollReveal>
         </div>
@@ -66,50 +92,41 @@ const AboutPage = () => {
       <section className="bg-white">
         <div className="container mx-auto px-6 py-20 text-center">
           <ScrollReveal>
-            <h2 className="font-serif text-4xl font-bold text-[#0A2342]">Meet Our Leaders</h2>
+            <h2 className="font-serif text-4xl font-bold text-[#0A2342]">Meet Our Leadership</h2>
             <p className="font-sans text-gray-600 mt-2 mb-16">
-              Our strength lies in our experience.  Our leaders bring over 100+ years of combined regional expertise.
+              Our strength lies in our experience. Our leaders bring over 100+ years of combined regional expertise.
             </p>
           </ScrollReveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             
-            {/* Team Member 1 */}
-            <ScrollReveal delay={0.1}>
-              <div className="text-center">
-                <img src="/assets/Ramakanta_panda.jpg" alt="Ramakanta Panda" className="w-50 h-50 rounded-full mx-auto mb-4 shadow-lg object-cover" />
-                 <h3 className="font-sans text-xl font-bold text-[#0A2342]">Ramakanta Panda </h3>
-                 <p className="font-sans text-gray-500 mb-2">Managing Partner & Founder </p>
-                 <p className="font-sans text-sm text-gray-600 italic">"Streamlining supply chains for success." </p>
-                 <p className="font-sans text-sm text-gray-500 mt-2">24 years in SCM with India's top corporates</p>
-              </div>
-            </ScrollReveal>
-
-            {/* Team Member 2 */}
-            <ScrollReveal delay={0.2}>
-              <div className="text-center">
-                <img src="https://placehold.co/400x400/EBF8FF/0A2342?text=BNM" alt="Biranchi Narayan Mishra" className="w-50 h-50 rounded-full mx-auto mb-4 shadow-lg object-cover" />
-                 <h3 className="font-sans text-xl font-bold text-[#0A2342]">Biranchi Narayan Mishra </h3>
-                 <p className="font-sans text-gray-500 mb-2">Partner & Operations Head </p>
-                 <p className="font-sans text-sm text-gray-600 italic">"Efficiency and reliability guaranteed." </p>
-                  <p className="font-sans text-sm text-gray-500 mt-2">15+ years in Courier & Cargo </p>
-              </div>
-            </ScrollReveal>
-
-            {/* Team Member 3 */}
-            <ScrollReveal delay={0.3}>
-              <div className="text-center">
-                <img src="https://placehold.co/400x400/EBF8FF/0A2342?text=BKD" alt="Bijaya Kumar Dash" className="w-50 h-50 rounded-full mx-auto mb-4 shadow-lg object-cover" />
-                 <h3 className="font-sans text-xl font-bold text-[#0A2342]">Bijaya Kumar Dash </h3>
-                 <p className="font-sans text-gray-500 mb-2">Partner & Founder </p>
-                 <p className="font-sans text-sm text-gray-600 italic">"Delivering excellence, every time." </p>
-                  <p className="font-sans text-sm text-gray-500 mt-2">30+ years in Courier & Cargo </p>
-              </div>
-            </ScrollReveal>
+            {leaders.map((leader, index) => (
+              <ScrollReveal key={leader.name} delay={index * 0.1}>
+                <div className="text-center">
+                  <a href={leader.linkedinUrl} target="_blank" rel="noopener noreferrer" className="relative inline-block group">
+                    <img 
+                      src={leader.imgSrc}
+                      alt={leader.name} 
+                      className="w-48 h-48 rounded-full mx-auto shadow-lg object-cover" 
+                    />
+                    <div className="absolute inset-0 w-48 h-48 rounded-full bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 mx-auto">
+                      <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                      </svg>
+                    </div>
+                  </a>
+                  <h3 className="font-sans text-xl font-bold text-[#0A2342] mt-4">{leader.name}</h3>
+                  <p className="font-sans text-gray-500 mb-2">{leader.title}</p>
+                  <p className="font-sans text-sm text-gray-600 italic">{leader.quote}</p>
+                  <p className="font-sans text-sm text-gray-500 mt-2">{leader.experience}</p>
+                </div>
+              </ScrollReveal>
+            ))}
             
           </div>
         </div>
       </section>
- {/* --- OUR INFRASTRUCTURE SECTION (VIBRANT WITH IMAGES) --- */}
+
+      {/* --- OUR INFRASTRUCTURE SECTION (VIBRANT WITH IMAGES) --- */}
       <section className="bg-gray-100">
         <div className="container mx-auto px-6 py-20 text-center">
           <ScrollReveal>
@@ -120,7 +137,6 @@ const AboutPage = () => {
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             
-            {/* Branches */}
             <ScrollReveal delay={0.1}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
@@ -136,7 +152,6 @@ const AboutPage = () => {
               </div>
             </ScrollReveal>
 
-            {/* Warehouse Space */}
             <ScrollReveal delay={0.2}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
@@ -152,7 +167,6 @@ const AboutPage = () => {
               </div>
             </ScrollReveal>
 
-            {/* Owned Vehicles */}
             <ScrollReveal delay={0.3}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
@@ -168,7 +182,6 @@ const AboutPage = () => {
               </div>
             </ScrollReveal>
 
-            {/* Dedicated Personnel */}
             <ScrollReveal delay={0.4}>
               <div className="relative h-64 rounded-lg shadow-md overflow-hidden group">
                 <img 
@@ -187,10 +200,11 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      {/* --- REUSABLE CTA SECTION --- */}
+      
       <CTA />
     </motion.div>
   );
 };
 
 export default AboutPage;
+
