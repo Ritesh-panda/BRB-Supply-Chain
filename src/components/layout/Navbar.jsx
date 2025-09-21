@@ -67,7 +67,7 @@ const Navbar = () => {
         >
           <motion.div
             layout
-            transition={{ type: 'spring', stiffness: 300, damping: 30, duration: 0.5 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 30, duration: 2.0 }}
             className={`flex items-center justify-center gap-6 px-4 py-2 bg-black/80 text-white shadow-2xl shadow-black/20 ring-1 ring-white/10 backdrop-blur-lg
                        ${isDesktopExpanded ? 'w-[600px] rounded-2xl' : 'w-auto rounded-full'}`}
           >
