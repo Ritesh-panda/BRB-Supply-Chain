@@ -18,7 +18,7 @@ const AboutPage = () => {
       name: "Ramakanta Panda",
       title: "Managing Partner & Co-Founder",
       quote: `"Streamlining supply chains for success."`,
-      experience: "24 years in SCM with India's top corporates",
+      experience: "25+ years in SCM with India's top corporates",
       imgSrc: "/assets/Ramakanta_panda.jpg",
       linkedinUrl: "https://www.linkedin.com/in/ramakanta-panda-28141532/" // <-- REPLACE WITH ACTUAL LINKEDIN URL
     },

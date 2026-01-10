@@ -396,33 +396,146 @@ const clientData = {
     </div>
   </div>
 </section>
-      {/* --- CUSTOMER TRUST / TESTIMONIAL SECTION --- */}
-      <section className="bg-white">
-        <div className="container mx-auto px-4 sm:px-6 py-16 md:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <ScrollReveal>
-              <div>
-                <h2 className="font-serif text-4xl font-bold text-[#0A2342] mb-6">Building Partnerships on Trust</h2>
-                <div className="relative">
-                  <div className="absolute -top-4 -left-4 text-8xl text-blue-100 opacity-50 font-serif z-0">“</div>
-                  <blockquote className="relative z-10 font-serif text-2xl italic text-gray-700 leading-relaxed">
-                    "BRB Supply Chain's reliability and operational efficiency are unmatched in Odisha. They are not just a vendor, but a true partner in our success. Their professionalism and timely delivery have been critical for our operations."
-                  </blockquote>
-                  <div className="mt-6">
-                    <p className="font-sans text-lg font-bold text-[#0A2342]">Sidharth Mishra</p>
-                    <p className="font-sans text-gray-600">Operations Head, Utkal Manufacturing</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={0.2}>
-              <div>
-                <img src="https://images.pexels.com/photos/834863/pexels-photo-834863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A satisfied business partner" className="rounded-lg shadow-2xl object-cover w-full h-full"/>
-              </div>
-            </ScrollReveal>
-          </div>
+<section className="bg-white">
+  <div className="container mx-auto px-6 py-20">
+
+    <h2 className="font-serif text-4xl font-bold text-[#0A2342] mb-14 text-center">
+      Why Businesses Choose BRB Supply Chain
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      {/* Card 1 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <h3 className="text-xl font-semibold text-[#0A2342] mb-3">
+            Proven Operational Reliability
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            Consistent on-time deliveries powered by optimized workflows, proactive coordination,
+            and disciplined execution.
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* Card 2 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <h3 className="text-xl font-semibold text-[#0A2342] mb-3">
+            Industry-Focused Solutions
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            Tailored logistics and supply chain services designed specifically
+            for manufacturing, infrastructure, and industrial operations.
+          </p>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <h3 className="text-xl font-semibold text-[#0A2342] mb-3">
+            Transparent & Accountable
+          </h3>
+          <p className="text-gray-600 leading-relaxed">
+            Clear communication, defined service levels, and complete accountability
+            at every stage of the supply chain.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section className="bg-gray-50">
+  <div className="container mx-auto px-6 py-20">
+
+    <h2 className="font-serif text-4xl font-bold text-[#0A2342] mb-14 text-center">
+      Our Supply Chain Process
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      {/* Step 01 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white text-center
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <span className="text-4xl font-bold text-blue-600">01</span>
+          <p className="mt-4 font-semibold text-[#0A2342]">Requirement Analysis</p>
+        </div>
+      </div>
+
+      {/* Step 02 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white text-center
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <span className="text-4xl font-bold text-blue-600">02</span>
+          <p className="mt-4 font-semibold text-[#0A2342]">Strategic Planning</p>
+        </div>
+      </div>
+
+      {/* Step 03 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white text-center
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <span className="text-4xl font-bold text-blue-600">03</span>
+          <p className="mt-4 font-semibold text-[#0A2342]">Execution & Tracking</p>
+        </div>
+      </div>
+
+      {/* Step 04 */}
+      <div className="
+        group relative p-8 rounded-xl border border-gray-200 bg-white text-center
+        transition-all duration-500 ease-out
+        hover:-translate-y-3 hover:shadow-2xl hover:border-transparent
+      ">
+        <span className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+
+        <div className="relative z-10">
+          <span className="text-4xl font-bold text-blue-600">04</span>
+          <p className="mt-4 font-semibold text-[#0A2342]">On-Time Delivery</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
       
       <CTA />
     </motion.div>
