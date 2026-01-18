@@ -11,7 +11,7 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Efficiency and reliability guaranteed."`,
       experience: "15+ years in Courier & Cargo",
-      imgSrc: "/assets/BNM.jpg", // <-- Replace with local path if you have the image
+      imgSrc: "/assets/BNM.jpeg", // <-- Replace with local path if you have the image
       linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
     },
     {
@@ -28,7 +28,7 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Delivering excellence, every time."`,
       experience: "30+ years in Courier & Cargo",
-      imgSrc: "/assets/bkd.jpg", // <-- Replace with local path if you have the image
+      imgSrc: "/assets/bkd.jpeg", // <-- Replace with local path if you have the image
       linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
     }
   ];
