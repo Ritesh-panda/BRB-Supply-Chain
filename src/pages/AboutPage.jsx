@@ -11,8 +11,8 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Efficiency and reliability guaranteed."`,
       experience: "15+ years in Courier & Cargo",
-      imgSrc: "/assets/BNM.jpeg", // <-- Replace with local path if you have the image
-      linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+      imgSrc: "/assets/BNM.jpeg", 
+      linkedinUrl: "#" 
     },
     {
       name: "Ramakanta Panda",
@@ -20,7 +20,7 @@ const AboutPage = () => {
       quote: `"Streamlining supply chains for success."`,
       experience: "25+ years in SCM with India's top corporates",
       imgSrc: "/assets/Ramakanta_panda.jpg",
-      linkedinUrl: "https://www.linkedin.com/in/ramakanta-panda-28141532/" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+      linkedinUrl: "https://www.linkedin.com/in/ramakanta-panda-28141532/" 
     },
    
     {
@@ -28,8 +28,8 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Delivering excellence, every time."`,
       experience: "30+ years in Courier & Cargo",
-      imgSrc: "/assets/bkd.jpeg", // <-- Replace with local path if you have the image
-      linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
+      imgSrc: "/assets/bkd.jpeg", 
+      linkedinUrl: "#" 
     }
   ];
 
