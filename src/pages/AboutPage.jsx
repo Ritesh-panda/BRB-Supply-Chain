@@ -11,7 +11,7 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Efficiency and reliability guaranteed."`,
       experience: "15+ years in Courier & Cargo",
-      imgSrc: "https://placehold.co/400x400/EBF8FF/0A2342?text=BNM", // <-- Replace with local path if you have the image
+      imgSrc: "/assets/BNM.jpg", // <-- Replace with local path if you have the image
       linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
     },
     {
@@ -28,7 +28,7 @@ const AboutPage = () => {
       title: "Partner & Co-Founder",
       quote: `"Delivering excellence, every time."`,
       experience: "30+ years in Courier & Cargo",
-      imgSrc: "https://placehold.co/400x400/EBF8FF/0A2342?text=BKD", // <-- Replace with local path if you have the image
+      imgSrc: "/assets/bkd.jpg", // <-- Replace with local path if you have the image
       linkedinUrl: "#" // <-- REPLACE WITH ACTUAL LINKEDIN URL
     }
   ];
