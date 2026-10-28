@@ -69,7 +69,7 @@ const Navbar = () => {
             layout
             transition={{ type: 'spring', stiffness: 300, damping: 30, duration: 2.0 }}
             className={`flex items-center justify-center gap-6 px-4 py-2 bg-black/80 text-white shadow-2xl shadow-black/20 ring-1 ring-white/10 backdrop-blur-lg
-                       ${isDesktopExpanded ? 'w-[700px] rounded-2xl' : 'w-auto rounded-full'}`}
+                       ${isDesktopExpanded ? 'w-[750px] rounded-2xl' : 'w-auto rounded-full'}`}
           >
             <AnimatePresence>
               {isDesktopExpanded && (
@@ -90,18 +90,27 @@ const Navbar = () => {
                   {link.label}
                 </NavLink>
               ))}
-              <a
-                href="https://brbsupplychain.co.in/cpanel/Default.aspx"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative px-3 py-1.5 text-sm font-medium text-gray-400 hover:text-white transition-colors whitespace-nowrap"
-              >
-                Staff Login
-              </a>
             </motion.nav>
             <AnimatePresence>
               {isDesktopExpanded && (
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <motion.div 
+                  initial={{ opacity: 0 }} 
+                  animate={{ opacity: 1 }} 
+                  exit={{ opacity: 0 }}
+                  className="flex items-center gap-2 whitespace-nowrap"
+                >
+                  <a
+                    href="https://brbsupplychain.co.in/cpanel/Default.aspx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-gray-300 hover:text-white border border-white/20 hover:border-white/50 rounded-lg transition-all hover:bg-white/5"
+                    title="Staff & ERP Portal"
+                  >
+                    <svg className="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    Staff Portal
+                  </a>
                   <Link to="/contact">
                     <button className="bg-white/90 text-black text-sm font-bold py-2 px-4 rounded-lg hover:bg-white transition-colors">
                       Get a Quote
@@ -171,23 +180,24 @@ const Navbar = () => {
                                 </NavLink>
                             </motion.div>
                         ))}
-                        <motion.div variants={navItemVariants}>
+                         <motion.div variants={navItemVariants} className="pt-8 flex flex-col gap-3 items-center">
+                            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                                <button className="bg-white text-black font-bold py-3 px-8 rounded-md text-lg w-56">
+                                    Get a Quote
+                                </button>
+                            </Link>
                             <a
                                 href="https://brbsupplychain.co.in/cpanel/Default.aspx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="font-serif text-4xl font-semibold text-gray-200 hover:text-white"
+                                className="flex items-center justify-center gap-2 border border-white/40 text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-md text-base w-56 transition-colors"
                             >
-                                Staff Login
+                                <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                                Staff Portal
                             </a>
-                        </motion.div>
-                         <motion.div variants={navItemVariants} className="pt-8">
-                            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                                <button className="bg-white text-black font-bold py-3 px-8 rounded-md text-lg">
-                                    Get a Quote
-                                </button>
-                            </Link>
                         </motion.div>
                     </motion.div>
                 </motion.div>
