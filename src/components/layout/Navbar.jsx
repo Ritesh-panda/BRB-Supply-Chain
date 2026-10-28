@@ -103,12 +103,9 @@ const Navbar = () => {
                     href="https://brbsupplychain.co.in/cpanel/Default.aspx"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-gray-300 hover:text-white border border-white/20 hover:border-white/50 rounded-lg transition-all hover:bg-white/5"
+                    className="px-3.5 py-2 text-xs font-semibold text-gray-300 hover:text-white border border-white/20 hover:border-white/50 rounded-lg transition-all hover:bg-white/10 whitespace-nowrap"
                     title="Staff & ERP Portal"
                   >
-                    <svg className="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                    </svg>
                     Staff Portal
                   </a>
                   <Link to="/contact">
@@ -191,11 +188,8 @@ const Navbar = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="flex items-center justify-center gap-2 border border-white/40 text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-md text-base w-56 transition-colors"
+                                className="flex items-center justify-center border border-white/40 text-white hover:bg-white/10 font-semibold py-3 px-8 rounded-md text-base w-56 transition-colors"
                             >
-                                <svg className="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                                </svg>
                                 Staff Portal
                             </a>
                         </motion.div>
